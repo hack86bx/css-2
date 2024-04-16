@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordonnées géographiques</title>
+    <style>
+        table, th, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 1024px;
+        }
+
+        #BE {
+            background-image: url(img/be.svg);
+        }
+
+        #FR {
+            background-image: url(img/fr.svg);
+        }
+
+        #US {
+            background-image: url(img/us.svg);
+        }
+
+        #IN {
+            background-image: url(img/in.svg);
+        }
+
+        #PE {
+            background-image: url(img/pe.svg);
+        }
+
+        #BE, #FR, #US, #IN, #PE {
+            background-size: 30px;
+            background-repeat: no-repeat;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+    Trouvez sur Internet les coordonnées des lieux suivants (par exemple sur Wikipédia) :
+    – Bruxelles – Grand'Place
+    – Paris – Tour Eiffel
+    – USA/Canada – Chutes de Niagara
+    – Inde – Taj Mahal
+    – Pérou – Cité Inca de Machu Picchu
+    Afficher les données trouvées sous forme d'un tableau (Pays – Lieu/Site – Longitude – Latitude)
+-->
+    <h1>Coordonnées géographiques</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Pays</th>
+            <th rowspan="2">Lieu/Site</th>
+            <th colspan="2">En degrés, minutes, secondes</th>
+            <th colspan="2">En degrés décimaux</th>
+        </tr>
+        <tr>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+        </tr>
+        <tr>
+            <td id="BE">Belgique</td>
+            <td>Bruxelles – Grand'Place</td>
+            <td>50° 50' 48" N</td>
+            <td>4° 21' 9" E</td>
+            <td>50.8467139</td>
+            <td>4.3525151</td>
+        </tr>
+        <tr>
+            <td id="FR">France</td>
+            <td>Paris – Tour Eiffel</td>
+            <td>48° 51' 29" N</td>
+            <td>2° 17' 40" E</td>
+            <td>48.8579662</td>
+            <td>2.2945015</td>
+        </tr>
+        <tr>
+            <td id="US">USA/Canada</td>
+            <td>Chutes de Niagara</td>
+            <td>43° 4' 42" N</td>
+            <td>79° 4' 28" W</td>
+            <td>43.0784134</td>
+            <td>-79.0743266</td>
+        </tr>
+        <tr>
+            <td id="IN">Inde</td>
+            <td>Taj Mahal</td>
+            <td>27° 10' 30" N</td>
+            <td>78° 2' 32" E</td>
+            <td>27.1750075</td>
+            <td>78.0421013</td>
+        </tr>
+        <tr>
+            <td id="PE">Pérou</td>
+            <td>Cité Inca de Machu Picchu</td>
+            <td>13° 9' 52" S</td>
+            <td>72° 32' 42" W</td>
+            <td>-13.164422</td>
+            <td>-72.5450851</td>
+        </tr>
+    </table>
+</body>
+</html>

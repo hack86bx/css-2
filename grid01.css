@@ -1,0 +1,40 @@
+body {
+    margin:0;
+}
+
+/*
+3 colonnes :
+    la 1ère de 100 pixels de large,
+    la 2ème de 60% de la largeur de la fenêtre et
+    la 3ème occupe automatiquement ce qui reste
+2 lignes :
+    la 1ère de 100 pixels de haut et
+    la 2ème occupe automatiquement ce qui reste en fonction du contenu
+*/
+
+#global {
+    display:grid;
+    grid-template-columns: 100px 60% auto;
+    grid-template-rows: 100px auto;
+}
+
+header {
+    background-color: aqua;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: coral;
+}
+
+aside {
+    background-color: lightgray;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+}

@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+#global {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+header {
+    background-color: aqua;
+    grid-column-start : 1; 
+    grid-column-end : 4;
+    grid-row-start : 1; 
+    grid-row-end : 2;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* équivalent à    grid-column:1/2 */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* équivalent à    grid-row: 2/3; */
+}
+
+main {
+    background-color: coral;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+aside {
+    background-color: lightgray;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+aside img {
+    width: 100%;
+    height:auto;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+}
+
+.conteneur {
+    background-color: powderblue;
+    color: #444;
+    display:flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* équivalent à flex-flow: row wrap; */
+    justify-content: center;
+}
+
+.boite {
+    margin: 5px;
+
+    /* on divise en 3 (nombre de colonnes) la largeur totale de la page (100%) en ayant retiré les marges et les bordures des 3 figures, mais attention les marges se superposent */
+    width:calc((100% - 32px)/3);
+}
+
+.boite img {
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.boite figcaption {
+    padding: 0 5px;
+    text-align: center;
+}
+
+/* Pour les écrans de maximum 480px, on affiche les images sur 1 colonne */
+
+/* Pour les écrans entre 480px et 800px, on affiche les images sur 2 colonnes */
+
+/* Pour les écrans entre 800px et 1024px, on affiche les images sur 3 colonnes */
+
+/* Pour les écrans de plus de 1024px, on affiche les images sur 4 colonnes */

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#global {
+    width: 640px;
+    height:640px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+header {
+    background-color: aqua;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    width:100%;
+    margin-bottom: auto;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    border-radius: 0 0 8px 8px;
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}

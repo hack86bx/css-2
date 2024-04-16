@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géolocalisation</title>
+</head>
+<body onload="quelBrowser();">
+    <h1>Géolocalisation</h1>
+    <p>Votre navigateur : <span id="browser"></span></p>
+    <p>Est-ce-que la Géolocalisation est supportée ? <span id="geo"></span></p>
+    <button onclick="detecterGeoLoc();">Tester</button>
+</body>
+<script>
+    function detecterGeoLoc() {
+        if (navigator.geolocation) {
+        // true – Le navigateur supporte 
+        document.getElementById("geo").innerHTML = "<strong>OUI</strong>, votre navigateur peut géolocaliser";
+        }
+        else {
+        // false – Le navigateur ne supporte pas
+        document.getElementById("geo").innerHTML = "<strong>NON</strong>, désolé, utilisez un autre !"; 
+        }
+    }
+
+    function quelBrowser() {
+        document.getElementById("browser").innerHTML = navigator.userAgent;
+    }
+</script>
+</html>

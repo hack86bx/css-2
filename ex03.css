@@ -1,0 +1,39 @@
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    /* Les éléments du menu vont être placés horizontalement (axe principal) */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: center;
+}
+
+.menu a {
+    display: block;
+    
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    
+    /* transition de 1/2 seconde */
+    
+}
+
+.menu a:hover {
+    font-weight: bold;
+    background-color: cornflowerblue;
+}
+
+/* le premier élément du menu a des bordures arrondies (à gauche) */
+.menu a:first-child {
+    
+}
+
+/* le dernier élément du menu a des bordures arrondies (à droite) */
+.menu a:last-child {
+    
+}

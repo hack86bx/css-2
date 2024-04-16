@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+#galerie {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid black;
+
+    display: grid;
+    grid-template-rows: repeat(3, 130px);
+    grid-template-columns: repeat(3, 150px);
+
+    grid-auto-columns: 150px;
+    grid-auto-flow: column;
+
+
+    /* les propriétés suivantes  (-content) indiquent l'alignement de l'ensemble de la grille par rapport au conteneur */
+    justify-content: center;
+    align-content: start;
+
+    /* les propriétés suivantes (-items) indiquent l'alignement des contenus par rapport aux cellules */
+    justify-items: center;
+    align-items: center;
+}
+
+/* les propriétés (-self) indiquent l'alignement d'un élément différent des autres */
+/*
+#galerie img:nth-child(5) {
+    justify-self: start;
+    align-self: end;
+    order:-1;
+}
+*/
